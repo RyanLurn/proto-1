@@ -1,3 +1,15 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
-  return <h1>Web Home</h1>;
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <h1>Web Home {count}</h1>
+      <button type="button" onClick={() => setCount(count + 1)}>
+        Increment
+      </button>
+    </>
+  );
 }
