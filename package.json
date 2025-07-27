@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "pnpm exec biome format --write",
+    "lint": "pnpm exec biome lint --write",
+    "check": "pnpm exec biome check --write"
   },
   "packageManager": "pnpm@10.12.1",
   "devDependencies": {
+    "@biomejs/biome": "2.1.2",
     "turbo": "^2.5.5"
   }
 }
