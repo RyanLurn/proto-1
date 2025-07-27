@@ -1,15 +1,20 @@
 {
   "name": "proto-1",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "format": "pnpm exec biome format --write",
-    "lint": "pnpm exec biome lint --write",
-    "check": "pnpm exec biome check --write"
-  },
-  "packageManager": "pnpm@10.12.1",
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
+    "syncpack": "14.0.0-alpha.18",
     "turbo": "^2.5.5"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "private": true,
+  "scripts": {
+    "check": "pnpm exec biome check --write",
+    "deps:fix": "pnpm exec syncpack fix",
+    "deps:format": "pnpm exec syncpack format",
+    "deps:lint": "pnpm exec syncpack lint",
+    "deps:update": "pnpm exec syncpack update --target latest",
+    "format": "pnpm exec biome format --write",
+    "lint": "pnpm exec biome lint --write"
   }
 }
