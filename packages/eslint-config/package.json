@@ -1,14 +1,6 @@
 {
   "name": "@repo/eslint-config",
   "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "packageManager": "pnpm@10.12.1",
-  "exports": {
-    "./create-base-eslint-config": "./create-base-eslint-config.js",
-    "./create-nextjs-eslint-config": "./create-nextjs-eslint-config.js",
-    "./create-react-eslint-config": "./create-react-eslint-config.js"
-  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@next/eslint-plugin-next": "^15.4.4",
@@ -20,5 +12,13 @@
     "globals": "^16.3.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0"
-  }
+  },
+  "exports": {
+    "./create-base-eslint-config": "./create-base-eslint-config.js",
+    "./create-nextjs-eslint-config": "./create-nextjs-eslint-config.js",
+    "./create-react-eslint-config": "./create-react-eslint-config.js"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "private": true,
+  "type": "module"
 }
