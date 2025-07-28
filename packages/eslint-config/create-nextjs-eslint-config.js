@@ -1,6 +1,6 @@
 import tseslint from "typescript-eslint";
-import { createReactESLintConfig } from "./create-react-eslint-config";
-import { flatConfig as eslintPluginNext } from "@next/eslint-plugin-next";
+import { createReactESLintConfig } from "@repo/eslint-config/create-react-eslint-config";
+import eslintPluginNext from "@next/eslint-plugin-next";
 import globals from "globals";
 
 /**
@@ -18,8 +18,15 @@ function createNextjsESLintConfig(tsconfigRootDir) {
         }
       }
     },
-    /** @type {any} */ (eslintPluginNext.recommended),
-    /** @type {any} */ (eslintPluginNext.coreWebVitals)
+    {
+      plugins: {
+        "@next/next": eslintPluginNext
+      },
+      /** @type {any} */ rules: {
+        ...eslintPluginNext.configs.recommended.rules,
+        ...eslintPluginNext.configs["core-web-vitals"].rules
+      }
+    }
     // Used type assertion because the Severity level specified in the plugin
     // is not compatible with the one expected by typescript-eslint
     // typescript-eslint expects literal "error" | "warn" | "off"

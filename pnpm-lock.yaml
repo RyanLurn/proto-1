@@ -36,6 +36,15 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
+      '@eslint/js':
+        specifier: ^9.32.0
+        version: 9.32.0
+      '@next/eslint-plugin-next':
+        specifier: ^15.4.4
+        version: 15.4.4
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       '@repo/ts-config':
         specifier: workspace:*
         version: link:../../packages/ts-config
@@ -51,12 +60,30 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.6
         version: 19.1.6(@types/react@19.1.8)
+      eslint:
+        specifier: ^9.32.0
+        version: 9.32.0(jiti@2.5.1)
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.32.0(jiti@2.5.1))
+      eslint-config-turbo:
+        specifier: ^2.5.5
+        version: 2.5.5(eslint@9.32.0(jiti@2.5.1))(turbo@2.5.5)
+      eslint-plugin-react-hooks:
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.32.0(jiti@2.5.1))
+      globals:
+        specifier: ^16.3.0
+        version: 16.3.0
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
+      typescript-eslint:
+        specifier: ^8.38.0
+        version: 8.38.0(eslint@9.32.0(jiti@2.5.1))(typescript@5.8.3)
       wrangler:
         specifier: ^4.26.0
         version: 4.26.0

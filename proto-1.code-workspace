@@ -8,6 +8,9 @@
     },
     {
       "path": "packages/ts-config"
+    },
+    {
+      "path": "packages/eslint-config"
     }
   ],
   "settings": {

@@ -1,4 +1,4 @@
-import { createBaseESLintConfig } from "./create-base-eslint-config";
+import { createBaseESLintConfig } from "@repo/eslint-config/create-base-eslint-config";
 import tseslint from "typescript-eslint";
 import reactHooks from "eslint-plugin-react-hooks";
 import globals from "globals";

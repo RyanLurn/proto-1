@@ -1,9 +1,14 @@
 {
-  "name": "eslint-config",
+  "name": "@repo/eslint-config",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.12.1",
+  "exports": {
+    "./create-base-eslint-config": "./create-base-eslint-config.js",
+    "./create-nextjs-eslint-config": "./create-nextjs-eslint-config.js",
+    "./create-react-eslint-config": "./create-react-eslint-config.js"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@next/eslint-plugin-next": "^15.4.4",
