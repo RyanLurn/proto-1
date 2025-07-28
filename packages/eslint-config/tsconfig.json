@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/ts-config/base.json",
+  "compilerOptions": {
+    "module": "preserve",
+    "noEmit": true,
+    "lib": ["es2022"]
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules"]
+}
