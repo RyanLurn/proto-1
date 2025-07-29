@@ -10,6 +10,10 @@
   "packageManager": "pnpm@10.12.1",
   "private": true,
   "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "check-types": "turbo check-types",
     "deps:fix": "pnpm exec syncpack fix",
     "deps:format": "pnpm exec syncpack format",
     "deps:lint": "pnpm exec syncpack lint",
