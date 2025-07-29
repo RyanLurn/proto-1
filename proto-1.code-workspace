@@ -1,26 +1,34 @@
 {
   "folders": [
-    {
-      "path": "."
-    },
-    {
-      "path": "apps/web"
-    },
-    {
-      "path": "packages/ts-config"
-    },
-    {
-      "path": "packages/eslint-config"
-    }
+    { "path": "." },
+    { "path": "apps/web" },
+    { "path": "packages/ui" },
+    { "path": "packages/ts-config" },
+    { "path": "packages/eslint-config" }
   ],
   "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
+    "editor.tabSize": 2,
     "typescript.preferences.includePackageJsonAutoImports": "auto",
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "typescript.suggest.autoImports": true,
     "typescript.tsdk": "web\\node_modules\\typescript\\lib",
     "files.associations": {
       "wrangler.json": "jsonc"
+    },
+    // Hide the nested folders from the root view to avoid duplication
+    "files.exclude": {
+      "apps": true,
+      "packages": true
     }
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "csstools.postcss"
+    ]
   }
 }
