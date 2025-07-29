@@ -26,6 +26,9 @@ importers:
       '@opennextjs/cloudflare':
         specifier: ^1.6.1
         version: 1.6.1(wrangler@4.26.0)
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       next:
         specifier: 15.4.4
         version: 15.4.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -48,9 +51,6 @@ importers:
       '@repo/ts-config':
         specifier: workspace:*
         version: link:../../packages/ts-config
-      '@tailwindcss/postcss':
-        specifier: ^4.1.11
-        version: 4.1.11
       '@types/node':
         specifier: ^24.1.0
         version: 24.1.0
@@ -75,9 +75,6 @@ importers:
       globals:
         specifier: ^16.3.0
         version: 16.3.0
-      tailwindcss:
-        specifier: ^4.1.11
-        version: 4.1.11
       typescript:
         specifier: ^5.8.3
         version: 5.8.3

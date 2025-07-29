@@ -2,7 +2,8 @@
   "extends": "@repo/ts-config/nextjs.json",
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@repo/ui/*": ["../../packages/ui/src/*"]
     },
     "types": ["./cloudflare-env.d.ts", "node"]
   },
@@ -11,7 +12,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "eslint.config.mjs"
+    "eslint.config.mjs",
+    "postcss.config.mjs"
   ],
   "exclude": ["node_modules"]
 }
