@@ -20,8 +20,8 @@ import globals from "globals";
  */
 function createEslintConfig(options) {
   const {
-    tsconfigRootDir = ".",
-    framework = "base",
+    tsconfigRootDir = import.meta.dirname, // Default to the directory of the config file
+    framework = "base", // Default to no framework
     isStrict = true, // Default to the strictest setting
     isTypeAware = true // Default to type-aware linting
   } = options;
