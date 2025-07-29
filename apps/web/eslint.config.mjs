@@ -1,5 +1,8 @@
-import { createNextjsESLintConfig } from "@repo/eslint-config/create-nextjs-eslint-config";
+import { createEslintConfig } from "@repo/eslint-config/create";
 
-const eslintConfig = createNextjsESLintConfig(import.meta.dirname);
+const eslintConfig = createEslintConfig({
+  tsconfigRootDir: import.meta.dirname,
+  framework: "nextjs"
+});
 
 export default eslintConfig;

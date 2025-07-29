@@ -1,5 +1,7 @@
-import { createReactESLintConfig } from "@repo/eslint-config/create-react-eslint-config";
+import { createEslintConfig } from "@repo/eslint-config/create";
 
-const eslintConfig = createReactESLintConfig(".");
+const eslintConfig = createEslintConfig({
+  framework: "react"
+});
 
 export default eslintConfig;

@@ -1,5 +1,5 @@
-import { createBaseESLintConfig } from "./create-base-eslint-config.js";
+import { createEslintConfig } from "./create.js";
 
-const config = createBaseESLintConfig(".");
+const config = createEslintConfig({});
 
 export default config;
