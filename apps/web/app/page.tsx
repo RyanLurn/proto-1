@@ -2,6 +2,7 @@
 
 import { Button } from "@repo/ui/components/button";
 import { ModeToggle } from "@repo/ui/components/theme/mode-toggle";
+import { toast } from "@repo/ui/lib/utils";
 import { useState } from "react";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         variant="default"
         onClick={() => {
           setCount(count + 1);
+          toast.info("Count incremented");
         }}
       >
         Increment

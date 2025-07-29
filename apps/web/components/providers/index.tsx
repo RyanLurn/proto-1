@@ -1,3 +1,4 @@
+import { Toaster } from "@repo/ui/components/sonner";
 import { ThemeProvider } from "@repo/ui/components/theme/provider";
 
 function Providers({ children }: { children: React.ReactNode }) {
@@ -10,6 +11,7 @@ function Providers({ children }: { children: React.ReactNode }) {
       enableColorScheme
     >
       {children}
+      <Toaster />
     </ThemeProvider>
   );
 }
