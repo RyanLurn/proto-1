@@ -11,13 +11,13 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
     "check-types": "turbo check-types",
     "deps:fix": "pnpm exec syncpack fix",
     "deps:format": "pnpm exec syncpack format",
     "deps:lint": "pnpm exec syncpack lint",
     "deps:update": "pnpm exec syncpack update --target latest",
-    "format": "prettier . --write --cache"
+    "dev": "turbo dev",
+    "format": "prettier . --write --cache",
+    "lint": "turbo lint"
   }
 }
